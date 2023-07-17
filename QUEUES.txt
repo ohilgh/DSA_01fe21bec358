@@ -1,0 +1,31 @@
+QUEUES
+
+1.
+In your cinema ticketing system, you implement a queue to manage the waiting line. Each time a customer arrives, their ticket request is added to the back of the queue. When a ticket is available, the customer at the front of the queue is served, ensuring a fair and orderly process.
+
+2.
+While developing the messaging application, you utilize a queue to implement a chat message queue. When a user sends a message, it is enqueued at the back of the queue. Messages are dequeued from the front and displayed in the chat window, ensuring that the messages are shown in the order they were sent.
+
+3.
+In the printer spooler system, you use a queue to handle the print job queueing. Each time a user submits a print job, it is enqueued at the back of the queue. The print jobs are dequeued from the front, allowing the printer to process them in the order they were submitted.
+
+4.
+In the customer support ticketing system, you utilize a queue to manage the ticket queue. Each time a customer submits a support ticket, it is enqueued at the back of the queue. The support team can then dequeue tickets from the front, ensuring that they handle the tickets in the order they were received.
+
+5.
+While developing the process scheduling algorithm, you use a queue to prioritize and execute processes. Each time a process is ready to run, it is enqueued based on its priority. The operating system then dequeues processes from the front of the queue, executing them in the order of their priority.
+
+6.
+In the ride-sharing app, you utilize a queue to handle incoming ride requests. Each time a user requests a ride, their request is enqueued at the back of the queue. Drivers can then dequeue ride requests from the front, ensuring fairness and efficiency in serving the users.
+
+7.
+In the cafeteria system, you utilize a queue to manage food orders. Each time a customer places an order, it is enqueued at the back of the queue. The cafeteria staff can then dequeue orders from the front, ensuring that they prepare and serve the orders in the order they were received.
+
+8.
+While developing the network packet routing system, you use a queue to handle incoming packets. Each time a packet arrives, it is enqueued at the back of the queue. The routing system then dequeues packets from the front, allowing them to be processed and routed efficiently.
+
+9.
+In the task management system, you utilize a queue to handle task prioritization. Each time a task is created, it is enqueued based on its priority level. The system then dequeues tasks from the front, ensuring that higher-priority tasks are processed first.
+
+10.
+In the call center system, you use a queue to handle incoming calls. Each time a call comes in, it is enqueued at the back of the queue. Available agents can then dequeue calls from the front, ensuring that calls are handled in the order they were received and based on agent availability.

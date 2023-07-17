@@ -1,0 +1,132 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+#define MAX_SIZE 100
+
+// Define a stack structure
+struct Stack {
+    int data[MAX_SIZE];
+    int top;
+};
+
+// Function to initialize the stack
+void initialize(struct Stack* s) {
+    s->top = -1;
+}
+
+// Function to check if the stack is empty
+int is_empty(struct Stack* s) {
+    return s->top == -1;
+}
+
+// Function to check if the stack is full
+int is_full(struct Stack* s) {
+    return s->top == MAX_SIZE - 1;
+}
+
+// Function to push an element onto the stack
+void push(struct Stack* s, int x, FILE* log_file) {
+    if (is_full(s)) {
+        fprintf(log_file, "Error: Stack overflow\n");
+        return;
+    }
+    s->data[++s->top] = x;
+    fprintf(log_file, "Pushed %d onto the stack\n", x);
+}
+
+// Function to pop an element from the stack
+int pop(struct Stack* s, FILE* log_file) {
+    if (is_empty(s)) {
+        fprintf(log_file, "Error: Stack underflow\n");
+        return -1;
+    }
+    int x = s->data[s->top--];
+    fprintf(log_file, "Popped %d from the stack\n", x);
+    return x;
+}
+
+// Function to display the contents of the stack
+void display(struct Stack* s, FILE* log_file) {
+    fprintf(log_file, "Stack contents:\n");
+    for (int i = s->top; i >= 0; i--) {
+        fprintf(log_file, "%d\n", s->data[i]);
+    }
+}
+
+int main() {
+    int n, p, q;
+    printf("Enter the number of random numbers to generate: ");
+    scanf("%d", &n);
+    printf("Enter the range (p and q) of the random numbers (p <= q): ");
+    scanf("%d %d", &p, &q);
+
+    // Open the input file for writing
+    FILE* input_file = fopen("input.txt", "w");
+    if (input_file == NULL) {
+        printf("Error: Failed to open input file\n");
+        exit(1);
+    }
+
+    // Generate n random numbers between p and q and write them to the input file
+    srand(time(NULL));
+    for (int i = 0; i < n; i++) {
+        int x = rand() % (q - p + 1) + p;
+        fprintf(input_file, "%d ", x);
+    }
+
+    // Close the input file
+    fclose(input_file);
+
+    // Open the input file for reading
+    input_file = fopen("input.txt", "r");
+    if (input_file == NULL) {
+        printf("Error: Failed to open input file\n");
+        exit(1);
+    }
+
+    // Initialize the stack and the log files
+    struct Stack s;
+    initialize(&s);
+    FILE* push_log_file = fopen("push_log.txt", "w");
+    if (push_log_file == NULL) {
+        printf("Error: Failed to open push log file\n");
+        exit(1);
+    }
+    FILE* pop_log_file = fopen("pop_log.txt", "w");
+    if (pop_log_file == NULL) {
+printf("Error: Failed to open pop log file\n");
+exit(1);
+}
+FILE* operation_log_file = fopen("operation_log.txt", "w");
+if (operation_log_file == NULL) {
+printf("Error: Failed to open operation log file\n");
+exit(1);
+}
+// Read the numbers from the input file and push them onto the stack
+int x;
+while (fscanf(input_file, "%d", &x) != EOF) {
+    push(&s, x, push_log_file);
+}
+
+// Display the contents of the stack
+display(&s, operation_log_file);
+
+// Pop some elements from the stack
+pop(&s, pop_log_file);
+pop(&s, pop_log_file);
+
+// Display the contents of the stack again
+display(&s, operation_log_file);
+
+// Close the files
+fclose(input_file);
+fclose(push_log_file);
+fclose(pop_log_file);
+fclose(operation_log_file);
+
+return 0;
+}
+write a c program to generate n random numbers between a given range of numbers(p,q) and write it to a file(input.txt) and the read the input file and use stack to push , pop, display the numbers from the array of numbers by using switch condition to ask weather to push or pop the number and create separate log files for the push, pop and the operation log file, separetly 
+
+alter this code by using switch condition to ask user to push or pop

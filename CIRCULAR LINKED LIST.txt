@@ -1,0 +1,31 @@
+CIRCULAR LINKED LIST
+
+1. 
+In a national spelling bee competition, the participants form a circular linked list based on their registration order. Each participant has a unique ID. Write a function that takes an array of participant IDs and creates a circular linked list to represent the order of participants.
+
+2. 
+A group of hikers is exploring a circular hiking trail. They want to keep track of their progress using a circular linked list, where each node represents a checkpoint along the trail. Write a function to insert a new checkpoint at the beginning of the linked list.
+
+3. 
+A city's public transportation system is implementing a circular bus route. They need a data structure to represent the bus stops, and a circular linked list seems suitable. Write a function to insert a new bus stop at the end of the linked list.
+
+4. 
+A game developer is creating a circular maze game where players move through interconnected rooms. Each room has a unique identifier. Write a function to insert a new room with a given ID at a specific position in the circular linked list.
+
+5.
+A security system for a building uses a circular linked list to store authorized personnel access codes. Write a function to delete the first access code from the list when an employee leaves the company.
+
+6.
+A company's shift schedule is managed using a circular linked list, with each node representing a specific shift. Write a function to delete the last shift from the list when it's completed.
+
+7.
+A music festival wants to implement a circular linked list to manage the lineup of performers. Each performer is associated with a unique ID. Write a function to delete a specific performer node with a given ID from the linked list.
+
+8.
+A ticketing system for a theme park uses a circular linked list to track the number of visitors in the park. Write a function to find the total number of visitors in the park by traversing the circular linked list.
+
+9.
+A document management system organizes files using a circular linked list, where each node represents a file. Write a function to check if a specific file with a given name exists in the circular linked list.
+
+10.
+A social networking platform wants to implement a circular linked list to store user posts. They want to display the most recent posts first. Write a function to display the last five posts in reverse order from the circular linked list.

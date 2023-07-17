@@ -1,0 +1,4 @@
+Pushed 51
+Pushed 84
+Displayed stack contents
+Popped 84

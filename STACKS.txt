@@ -1,0 +1,31 @@
+STACKS
+
+1.
+As the food festival organizer, you decide to use a stack to manage the stalls. Each time a new stall is set up, it is added to the top of the stack. When a stall closes, it is removed from the top. This way, you can easily keep track of the active stalls and ensure efficient management.
+
+2.
+In your web browser development project, you implement the back button functionality using a stack. Whenever a user visits a new page, you push the URL onto the stack. When the back button is clicked, you pop the top URL from the stack, allowing the user to navigate back to the previous page.
+
+3.
+While developing the text editor program, you incorporate an 'undo' feature using a stack. Each time a user makes a change to the text, the previous state is pushed onto the stack. When the 'undo' command is triggered, the most recent state is popped from the stack, reverting the text to its previous state.
+
+4.
+ In the maze game design, you use a stack to record the player's movements. Whenever the player moves to a new location, the coordinates of that location are pushed onto the stack. If the player needs to backtrack, the previous location is popped from the stack, allowing the player to retrace their steps.
+
+5.
+ In your programming language project, you implement a stack-based system to manage function calls. When a function is called, its details are pushed onto the stack. As the function completes, it is popped from the stack, allowing the program to resume execution from the previous function call.
+
+6.
+You are creating a playlist management system for a music application. How can you use a stack to implement the 'undo' functionality for removing songs from the playlist? In the playlist management system, you incorporate an 'undo' feature for removing songs from the playlist using a stack. Each time a song is removed, its details are pushed onto the stack. When the 'undo' command is triggered, the most recently removed song is popped from the stack, restoring it to the playlist.
+
+7.
+While working on the compiler, you implement the syntax checking functionality using a stack. As the compiler parses the code, it pushes opening brackets, braces, or parentheses onto the stack. When a closing symbol is encountered, the stack is checked to ensure proper nesting and balanced syntax.
+
+8.
+You are building a web application and want to store the browsing history of users. How can you use a stack to maintain the history?In your web application development project, you use a stack to maintain the browsing history of users. Each time a user visits a new page, the URL is pushed onto the stack. This allows the user to navigate through their history by popping URLs from the stack, simulating the back button functionality.
+
+9.
+In the calculator program, you incorporate an 'undo' feature for mathematical operations using a stack. Whenever a calculation is performed, the operation and its operands are pushed onto the stack. When the 'undo' command is triggered, the most recent operation is popped from the stack, reverting the result.
+
+10.
+In the hotel reservation system, you use a stack to manage booking cancellations. Each time a cancellation request is received, the booking details are pushed onto the stack. When a room becomes available, the most recent cancellation is popped from the stack, ensuring fair handling of cancellation requests.

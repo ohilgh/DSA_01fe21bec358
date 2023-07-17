@@ -1,0 +1,6 @@
+Time Complexity for different Sorting Techniques (Worst Case Analysis):
+
+ BUBBLE SORT
+Input(n): 2
+Time Efficiency: 4.0000
+
